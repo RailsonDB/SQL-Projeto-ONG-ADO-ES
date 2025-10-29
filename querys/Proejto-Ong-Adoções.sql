@@ -35,6 +35,9 @@ select * from animais;
 -- Mostre os animais e suas respectivas datas de adoção (incluindo os que ainda não foram adotados). 
 -- Quais são as raças mais adotadas?
 
+
+
+
 -- 1° Quantos animais existem cadastrados no total?
 
 select
