@@ -98,8 +98,8 @@ group by Especie
 order by Especie;
 
 
-select * from adocoes limit 10;
-select * from animais limit 10;
+
+
 -- 8° Quais cidades mais realizaram adoções?
 select
     adocoes.Cidade,
@@ -112,6 +112,8 @@ group by adocoes.Cidade
 order by Qtd_Animais_Adotados desc;
 
 
+
+
 -- 9° Qual o valor total arrecadado em taxas de adoção?
 
 select
@@ -120,6 +122,8 @@ from adocoes
 join animais
 	on adocoes.ID_Animal = animais.ID_Animal
 where animais.Status = 'Adotado';
+
+
 
 
 -- 10° Qual é o mês com maior número de adoções?
@@ -140,6 +144,8 @@ limit 1;
 
 
 
+
+
 -- 11° Quais animais adotados têm idade superior a 5 anos?
 
 select
@@ -150,6 +156,8 @@ from animais
 where animais.Status = 'Adotado'
 and idade > 5
 order by Idade desc;
+
+
 
 
 
@@ -165,6 +173,8 @@ and year(Data_Cadastro) = 2024
 order by Nome_Animal;
 
 
+
+
 -- 13° Liste o nome do animal, o nome do adotante e a cidade onde ele foi adotado. 
 select
 	animais.Nome as Nome_Animal,
@@ -174,6 +184,9 @@ from animais
 join adocoes
 	on animais.ID_Animal = adocoes.ID_Animal
 order by animais.Nome;
+
+
+
 
 -- 14° Mostre os animais e suas respectivas datas de adoção (incluindo os que ainda não foram adotados). 
 select
@@ -185,6 +198,7 @@ from animais
 left join adocoes
 	on animais.ID_Animal = adocoes.ID_Animal
 order by animais.Nome;
+
 
 
 
