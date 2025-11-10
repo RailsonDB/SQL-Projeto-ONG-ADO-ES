@@ -42,15 +42,15 @@ nome do adotante, cidade, taxa de adoção e data de adoção.
 ### 🔹 Consultas Avançadas  
 11. Quais animais adotados têm *idade superior a 5 anos*?  
 12. Quais animais foram cadastrados em *2024* e já estão marcados como “Adotado”?  
-13. Liste o *nome do animal, o **nome do adotante* e a *cidade* da adoção.  
+13. Liste o *nome do animal*, o nome do *adotante* e a *cidade* da adoção.  
 14. Mostre todos os animais com suas respectivas *datas de adoção* (incluindo os que ainda não foram adotados).  
 15. Quais são as *raças mais adotadas*?
 
 
 
 ## 💡 Tecnologias Utilizadas  
-*MySQL* | Banco de dados relacional usado para gerenciar o projeto |
-*SQL* | Linguagem de consulta estruturada para extração de dados e análises |
+*MySQL* | Banco de dados relacional usado para gerenciar o projeto |<br>
+*SQL* | Linguagem de consulta estruturada para extração de dados e análises |<br>
 
 
 
@@ -65,7 +65,12 @@ nome do adotante, cidade, taxa de adoção e data de adoção.
 
 ## 🧰 Como utilizar o projeto no MySQL
 
-1. *Baixe ou clone este repositório*
+1. **Crie o banco de dados `ong_adocao`** diretamente no MySQL  
+   Você pode criar manualmente ou clonar este repositório com o banco e as tabelas já prontos.
+
+   ```sql
+   CREATE DATABASE IF NOT EXISTS ong_adocao;
+   USE ong_adocao;
 
 
 
